@@ -13,6 +13,7 @@ First you need to create a table in your database:
     PRIMARY KEY (`id`)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE INDEX IX_Timestamp ON session_handler_table(timestamp);
 
 Then have a look at example.php
 Easy!
